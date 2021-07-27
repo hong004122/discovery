@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Kids</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/etc_noticeQna.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside class="cartArea">
+        <div>
+            <h2>My Bag</h2>
+            <button>X</button>
+            <form>
+                <ul>
+                    <li class="floatCancel">
+                        <img src="images/ld_supergraphic_Ivory_f.png" alt="키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티">
+                        <fieldset>
+                            <a href="detail_supergraphic.html">
+                                <strong>키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티</strong>
+                                <span class="supergraphic_wh_Price">49000</span>
+                                <small>WH / 140</small>
+                            </a>
+                            <button type="button" class="supergraphic_wh_Price">－</button>
+                            <input type="text" value="2" id="supergraphic_wh_quantity" title="수량">
+                            <button type="button" class="supergraphic_wh_Price">＋</button>
+                            <label for="supergraphic_wh_Price">주문금액 :</label>
+                            <input type="text" id="supergraphic_wh_Price" value="98000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                    <li class="floatCancel">
+                        <img src="images/ld_fullband_Turquoise_f.png" alt="키즈 풀밴드 타슬란 반바지">
+                        <fieldset>
+                            <a href="detail_fullband.html">
+                                <strong>키즈 풀밴드 타슬란 반바지</strong>
+                                <span class="fullband_tq_Price">49000</span>
+                                <small>TQ / 120</small>
+                            </a>
+                            <button type="button" class="fullband_tq_Price">－</button>
+                            <input type="text" value="1" id="fullband_tq_quantity" title="수량">
+                            <button type="button" class="fullband_tq_Price">＋</button>
+                            <label for="fullband_tq_Price">주문금액 :</label>
+                            <input type="text" id="fullband_tq_Price" value="49000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                </ul>
+                <label for="cartTotalPrice">총 주문금액 :</label>
+                <input type="text" id="cartTotalPrice" value="119000" disabled title="119000">
+                <span>원</span>
+                <input type="submit" value="buy now" class="btn_b">
+            </form>
+        </div>
+    </aside>
+    <header>
+        <ul>
+            <li>우리카드 3만원 이상 결제 시 1만원 즉시 할인</li>
+            <li>카카오페이 30만원 이상 결제 시 1만원 즉시할인</li>
+            <li>온라인 공식몰 회원 단독! 스페셜 혜택 제공</li>
+        </ul>
+        <div>
+            <h1><a href="index.html">logo</a></h1>
+            <span class="floatCancel">
+                <a href="etc_login.html">Sign in</a>
+                <a href="etc_wishlist.html" class="material-icons">favorite_border</a>
+                <button class="material-icons">shopping_cart</button>
+            </span>
+        </div>
+        <nav>
+            <ul class="floatCancel">
+                <li>
+                    Outer
+                    <ul>
+                        <li><a href="list_outer_wind.html">바람막이</a></li>
+                        <li><a href="list_outer_jacket.html">자켓</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Top
+                    <ul>
+                        <li><a href="list_top_hoodie.html">맨투맨, 후드</a></li>
+                        <li><a href="list_top_shirt.html">티셔츠</a></li>
+                    </ul>
+                    </li>
+                <li>
+                    Bottom
+                    <ul>
+                        <li><a href="list_bot_short.html">숏팬츠</a></li>
+                        <li><a href="list_bot_pants.html">팬츠</a></li>
+                        <li><a href="list_bot_leggings.html">레깅스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Training Wear
+                    <ul>
+                        <li><a href="list_traning.html">트레이닝 세트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Shoes
+                    <ul>
+                        <li><a href="list_shoes_sliper.html">슬리퍼</a></li>
+                        <li><a href="list_shoes_sport.html">운동화</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Acc
+                    <ul>
+                        <li><a href="list_acc_bag.html">가방</a></li>
+                        <li><a href="list_acc_cap.html">모자</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header fin -->
+    <section class="etcNotice_qnaBox">
+        <h2>고객센터</h2>
+        <ul class="tabBtn floatCancel">
+            <li data-tabNumb='noticeTab' class="active">공지사항</li>
+            <li data-tabNumb='qnaTab'>자주 묻는 질문</li>
+        </ul>
+        <ul id="noticeTab" class="active">
+            <li>
+                <span>번호</span>
+                <span>제목</span>
+            </li>
+            <li>
+                <span>9</span>
+                <a href="etc_noticeCont09.html">디스커버리 ‘MY FORTUNE COOKIE’ 이벤트 2차 당첨자</a>
+            </li>
+            <li>
+                <span>8</span>
+                <a href="etc_noticeCont08.html">온라인몰 물류 이전, 배송 및 반품 입고 처리 공지</a>
+            </li>
+            <li>
+                <span>7</span>
+                <a href="etc_noticeCont07.html">회사분할에 따른 개인정보 이전 안내</a>
+            </li>
+            <li>
+                <span>6</span>
+                <a href="etc_noticeCont06.html">F&amp;F 통합 멤버십 안내</a>
+            </li>
+            <li>
+                <span>5</span>
+                <a href="etc_noticeCont05.html">[오프라인 매장] 여의도 더현대 서울 디스커버리 GRAND OPEN</a>
+            </li>
+            <li>
+                <span>4</span>
+                <a href="etc_noticeCont04.html">디스커버리 ‘WHITE DAY GIFT’ 이벤트 당첨자 공지</a>
+            </li>
+            <li>
+                <span>3</span>
+                <a href="etc_noticeCont03.html">디스커버리 ‘트리플 룰렛’ 이벤트 경품 당첨자</a>
+            </li>
+            <li>
+                <span>2</span>
+                <a href="etc_noticeCont02.html">디스커버리 MY FORTUNE COOKIE’ 이벤트 1차 당첨자</a>
+            </li>
+            <li>
+                <span>1</span>
+                <a href="etc_noticeCont01.html">[오프라인 매장] 디스커버리 키즈 팝업 스토어 - 현대백화점 판교정 단독 OPEN</a>
+            </li>
+        </ul>
+        <ul id="qnaTab">
+            <li>
+                <span>번호</span>
+                <span>제목</span>
+            </li>
+            <li>
+                <span>1</span>
+                <p>
+                    <strong>교환 가능한가요?</strong>
+                    <span>교환은 같은 상품의 사이즈와 컬러만 가능 하며 주문상품 수령 후 사용하지 않으신 경우에 한해서, 수령일로부터 7일 이내에 교환이 가능합니다. [교환절차]<br>
+                        ① 홈페이지 로그인 후 마이페이지 취소/교환/반품신청 선택 후 상세 주문내역에서 교환 버튼을 선택<br>
+                        ② 배송 당시 수령하신 박스에 제품 및 간단한 메모(구매한 사이트명,주문자명,연락처,교환사유) 동봉해 포장하여 반품해주시기 바랍니다.<br>
+                        ③ 상품이 반송 완료되면 요청하신 상품으로 교환배송을 해드립니다. - 단순변심에 의한 교환경우 왕복 배송비 모두 고객님 부담입니다.<br>
+                        - 불량에 의한 교환은 무상으로 교환 처리됩니다.<br>
+                        * 고객님의 실수로 상품이 훼손된 경우<br>
+                        * 상품 고유의 포장이 훼손되어 상품가치가 상실된 경우 (예:Tag/라벨 등의 훼손)<br>
+                        * 시간의 경과에 의하여 재판매가 곤란할 정도로 상품가치가 현저히 감소한 경우  계좌정보 : 국민은행 360137-04-010826 예금주 (주)에프앤에프</span>
+                </p>
+            </li>
+            <li>
+                <span>2</span>
+                <p>
+                    <strong>반품이 가능한 경우는 어떤 경우인가요?</strong>
+                    <span>- 관리자의 부주의나 상품 불량의 경우 상품 등을 실제 받으신 날로부터 7일 이내.(포장을 개봉하여 사용하거나 또는 상품의 가치가 훼손된 경우에는 반품 및 교환이 불가하오니 이점 양해하여 주시기 바랍니다.)<br>
+                          - 고객 변심 반품의 제품 받은날로부터 7일 이내 - 기타 전자상거래등에서의소비자보호에관한법률에 규정되어 있는 소비자 청약철회 가능범위에 해당되는 경우</span>
+                </p>
+            </li>
+            <li>
+                <span>3</span>
+                <p>
+                    <strong>반품시 유의사항은 무엇인가요?</strong>
+                    <span>반품 접수 절차 없이 임의로 반송할 경우, 반품내용을 확인할 수 없으므로 환불이 지연되거나 환불이 되지 않을 수 있습니다. 그러므로 반드시 디스커버리 온라인 쇼핑몰 로그인 후 MY uAGE에서 해당주문건에 대한 반품신청 을 통하여 접수해주시기 바랍니다.</span>
+                </p>
+            </li>
+            <li>
+                <span>4</span>
+                <p>
+                    <strong>제품의 수선을 맡기고 싶은데 방법을 알려 주세요.</strong>
+                    <span>디스커버리 고객관리팀 (080-820-8802)로 수선을 요청 하시면 됩니다. 단, Discovery EXuEDITION정품에 한 합니다.</span>
+                </p>
+            </li>
+            <li>
+                <span>5</span>
+                <p>
+                    <strong>반품 시 배송비는 누가 부담하나요?</strong>
+                    <span>상품의 불량 및 오배송 등의 경우 반품 택배비는 무료이나, 고객 변심에 의한 경우 왕복 택배비(5,000원)는 고객님 부담이오니 신중하게 결정해주세요. </span>
+                </p>
+            </li>
+            <li>
+                <span>6</span>
+                <p>
+                    <strong>디스커버리 매장은 어디에 있나요?</strong>
+                    <span>하단 메뉴에서 매장안내를 클릭하셔서 원하는 매장을 검색하시면 위치를 알 수 있습니다.</span>
+                </p>
+            </li>
+            <li>
+                <span>7</span>
+                <p>
+                    <strong>반품하면 환불은 언제 되나요?</strong>
+                    <span>반품입고확인이 되면 환불접수가 됩니다. <br>
+                        환불 접수 후 즉시 환불 되는게 아니라 반품확인이 된 후 2일 이내(휴일제외)에 이루어집니다.  카드경우는 승인취소가 되어 해당 카드사로의 취소여부 확인은 영업일 기준 3~5일 뒤에 확인 가능하며, 계좌이체나 무통장 입금경우는 말씀해주신 계좌로 환불됩니다.</span>    
+                </p>
+            </li>
+            <li>
+                <span>8</span>
+                <p>
+                    <strong>1년이 지난 제품인데 수선이 가능한가요?</strong>
+                    <span>품질 보증기간은 1년이지만 그 이후라도 CS CENTER 1:1문의에 접수해 주시면 수선가능 여부를 확인 후 수선해 드립니다. 동일한 원부자재가 없을시는 비슷한 원부자재로 대체 사용할 수도 있습니다.</span>
+                </p>
+            </li>
+            <li>
+                <span>9</span>
+                <p>
+                    <strong>어떤 택배사를 이용하나요?</strong>
+                    <span>빠르고 안전한 로젠택배로 배송되며, 타 택배는 이용이 불가한 점 양해 부탁드립니다.</span>
+                </p>
+            </li>
+            <li>
+                <span>10</span>
+                <p>
+                    <strong>온라인 구매와 오프라인 매장 구매의 차이점이 무엇인가요?</strong>
+                    <span>오프라인은 온라인과 행사가 서로 다를 수 있으므로 고객센터(080-820-8802) 연락주시면 자세히 안내해 드리겠습니다.</span>
+                </p>
+            </li>
+        </ul>
+        <div class="noticeTab pager active">
+            <a href="etc_notice_qna.html">Left</a>
+            <a href="etc_notice_qna.html">Right</a>
+            <ol>
+                <li><a href="etc_notice_qna.html" class="active">1</a></li>
+            </ol>
+        </div>
+        <div class="qnaTab pager">
+            <a href="etc_notice_qna.html">Left</a>
+            <a href="etc_notice_qna.html">Right</a>
+            <ol>
+                <li><a href="etc_notice_qna.html" class="active">1</a></li>
+            </ol>
+        </div>
+    </section>
+    <!-- listArea fin -->
+
+    <footer class="floatCancel">
+        <div class="mapPopup">
+            <h2>매장 안내</h2>
+            <div>
+                <ul>
+                    <li>
+                        <h3>인천 구월점</h3>
+                    </li>
+                    <li>
+                        <span>주소</span>
+                        <strong>인천광역시 남구 인주대로 494</strong>
+                    </li>
+                    <li>
+                        <span>전화번호</span>
+                        <strong>070-4178-5417</strong>
+                    </li>
+                    <li>
+                        <span>영업시간</span>
+                        <strong>10:30 ~ 20:30</strong>
+                    </li>
+                </ul>
+            </div>
+            <div>map</div>
+            <button class="btn_b">CLOSE</button>
+        </div>
+        <div class="floatCancel">
+            <a href="etc_aboutdiscovery.html">ABOUT DISCOVERY</a>
+            <ul class="floatCancel">
+                <li>
+                    <a href="etc_notice_qna.html">공지사항</a>
+                </li>
+                <li>
+                    <button class="popupBtn etc_map">매장안내</button>
+                </li>
+                <li>
+                    <a href="etc_privacy.html">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="etc_service.html">이용약관</a>
+                </li>
+                <li>
+                    <a href="etc_customer.html">1:1 고객상담</a>
+                </li>
+            </ul>
+            <address>서울특별시 남구 언주로 541 에프앤에프빌딩 호 (주) 에프앤에프 / 대표 : 김창수<br>
+                     사업자등록번호: 214-86-09977 / 통신판매업 신고번호: 제2011-서울강남-00086[사업자정보확인] E-MAIL: discovery@fnfcorp.com | FAX: 02-520-0991<br>
+                     개인정보보호책임자 : 이동국 / 교환 · 반품 반송처: (17384) 경기도 이천시 마장면 프리미엄아울렛로 113-37 F&F 물류센터 디스커버리 물류부</address>
+            <span>
+                <a href="http://blog.naver.com/prologue/PrologueList.nhn?blogId=discovery_kr" target="blank">
+                    blog
+                </a>
+                <a href="https://www.facebook.com/%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%9D%B5%EC%8A%A4%ED%8E%98%EB%94%94%EC%85%98-%ED%82%A4%EC%A6%88-107910730951039/" target="blank">
+                    facebook
+                </a>
+                <a href="https://www.instagram.com/discoveryexpedition_kr/" target="blank">
+                    insta
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- footer fin -->
+</body>
+</html>

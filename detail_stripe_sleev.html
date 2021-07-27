@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Kids</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/detail.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside class="cartArea">
+        <div>
+            <h2>My Bag</h2>
+            <button>X</button>
+            <form>
+                <ul>
+                    <li class="floatCancel">
+                        <img src="images/ld_supergraphic_Ivory_f.png" alt="키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티">
+                        <fieldset>
+                            <a href="detail_supergraphic.html">
+                                <strong>키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티</strong>
+                                <span class="supergraphic_wh_Price">49000</span>
+                                <small>WH / 140</small>
+                            </a>
+                            <button type="button" class="supergraphic_wh_Price">－</button>
+                            <input type="text" value="2" id="supergraphic_wh_quantity" title="수량">
+                            <button type="button" class="supergraphic_wh_Price">＋</button>
+                            <label for="supergraphic_wh_Price">주문금액 :</label>
+                            <input type="text" id="supergraphic_wh_Price" value="98000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                    <li class="floatCancel">
+                        <img src="images/ld_fullband_Turquoise_f.png" alt="키즈 풀밴드 타슬란 반바지">
+                        <fieldset>
+                            <a href="detail_fullband.html">
+                                <strong>키즈 풀밴드 타슬란 반바지</strong>
+                                <span class="fullband_tq_Price">49000</span>
+                                <small>TQ / 120</small>
+                            </a>
+                            <button type="button" class="fullband_tq_Price">－</button>
+                            <input type="text" value="1" id="fullband_tq_quantity" title="수량">
+                            <button type="button" class="fullband_tq_Price">＋</button>
+                            <label for="fullband_tq_Price">주문금액 :</label>
+                            <input type="text" id="fullband_tq_Price" value="49000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                </ul>
+                <label for="cartTotalPrice">총 주문금액 :</label>
+                <input type="text" id="cartTotalPrice" value="119000" disabled title="119000">
+                <span>원</span>
+                <input type="submit" value="buy now" class="btn_b">
+            </form>
+        </div>
+    </aside>
+    <header>
+        <ul>
+            <li>우리카드 3만원 이상 결제 시 1만원 즉시 할인</li>
+            <li>카카오페이 30만원 이상 결제 시 1만원 즉시할인</li>
+            <li>온라인 공식몰 회원 단독! 스페셜 혜택 제공</li>
+        </ul>
+        <div>
+            <h1><a href="index.html">logo</a></h1>
+            <span class="floatCancel">
+                <a href="etc_login.html">Sign in</a>
+                <a href="etc_wishlist.html" class="material-icons">favorite_border</a>
+                <button class="material-icons">shopping_cart</button>
+            </span>
+            <button class="material-icons navMui">menu</button>
+        </div>
+        <nav>
+            <ul class="floatCancel">
+                <li>
+                    Outer
+                    <ul>
+                        <li><a href="list_outer_wind.html">바람막이</a></li>
+                        <li><a href="list_outer_jacket.html">자켓</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Top
+                    <ul>
+                        <li><a href="list_top_hoodie.html">맨투맨, 후드</a></li>
+                        <li><a href="list_top_shirt.html">티셔츠</a></li>
+                    </ul>
+                    </li>
+                <li>
+                    Bottom
+                    <ul>
+                        <li><a href="list_bot_short.html">숏팬츠</a></li>
+                        <li><a href="list_bot_pants.html">팬츠</a></li>
+                        <li><a href="list_bot_leggings.html">레깅스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Training Wear
+                    <ul>
+                        <li><a href="list_traning.html">트레이닝 세트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Shoes
+                    <ul>
+                        <li><a href="list_shoes_sliper.html">슬리퍼</a></li>
+                        <li><a href="list_shoes_sport.html">운동화</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Acc
+                    <ul>
+                        <li><a href="list_acc_bag.html">가방</a></li>
+                        <li><a href="list_acc_cap.html">모자</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header fin -->
+    <section class="detailContainer">
+        <img src="images/ld_stripe_sleev_Navy_f.png" alt="스트라이프 슬리브리스 front">
+        <div class="wrap">
+            <h2>스트라이프 슬리브리스</h2>
+            <p>스트라이프 슬리브리스</p>
+            <p>앞면 스몰로고 뒷면 빅로고가 적용된 스트라이프 슬리브리스</p>
+            <p>넥/암홀 립 적용으로 늘어짐 완화 및 착용성 개선</p>
+            <form>
+                <fieldset>
+                    <ul class="information">
+                        <li>
+                            <label for="price_field">Price</label>
+                            <del>35,000원</del>
+                            <input type="text" value="17500" id="price_field" disabled title="17500원">
+                            <span>원</span>
+                        </li>
+                        <li>
+                            <span>Color</span>
+                            <input type="button" value="Navy" class="blueBlack active">
+                            <input type="button" name="styleHave" value="Blue" class="blue">
+                            <!-- color -->
+                        </li>
+                        <li>
+                            <label for="size_one">Size</label>
+                            <input type="button" value="120" id="size_one">
+                            <input type="button" value="130" id="size_two">
+                            <input type="button" value="140" id="size_three">
+                            <input type="button" value="150" id="size_four">
+                        </li>
+                        <li>
+                            <label for="quantity">수량</label>
+                            <button type="button">-</button>
+                            <input type="text" value="1" id="quantity">
+                            <button type="button">+</button>
+                        </li>
+                        <li>
+                            <label for="totalPrice">총 상품금액 :</label>
+                            <input type="text" id="totalPrice" value="17500" disabled>
+                            <span>원</span>
+                        </li>
+                    </ul>
+                </fieldset>
+                <input type="submit" value="buy now" class="btn_b">
+                <button class="btn_w">add to cart</button>
+                <hr>
+                <button class="btn_w">size guide</button>
+            </form>
+        </div> 
+        <!-- info fin -->
+        <mark><span class="material-icons">local_shipping</span> Discovery 온라인 공식몰은 구매금액 관계없이 전상품 무료배송</mark>
+            
+        <!-- detail page -->
+        <div class="info page">
+            <h2>상품 상세정보</h2>
+            <div>
+                <img src="images/ld_stripe_sleev_Navy_f.png" alt="스트라이프 슬리브리스 front">
+                <img src="images/ld_stripe_sleev_Navy_b.png" alt="스트라이프 슬리브리스 back">
+            </div>
+            <figure>
+                <img src="images/ld_stripe_sleev_Navy_f.png" alt="스트라이프 슬리브리스 front">
+                <figcaption>
+                    <h3>STRIPE SLEEVELESS</h3>
+                    <p>앞뒤 로고 포인트를 준 스트라이프 슬리브리스</p>
+                </figcaption>
+            </figure>
+            <p>
+                <strong>NATURAL LOOK</strong>
+                면 터치의 내츄럴한 외관으로 편하게 착용 가능합니다.
+            </p>
+            <p>
+                <strong>높은 활용도</strong>
+                간절기 이너 대용으로, 여름철 단품으로도 활용도가 높은 아이템
+            </p>
+        </div>
+        <div class="point page">
+            <h2>Details</h2>
+            <ul>
+                <li class="imgLtextR">
+                    <img src="images/d_stripe_sleev_Navy_detail01.jpg" alt="스트라이프 슬리브리스 detail1">
+                    <p>
+                        <strong>립 적용</strong>
+                        넥과 암홀에 립을 적용하여 늘어짐을 완화하고 착용성을 개선하였습니다.
+                    </p>
+                </li>
+                <li class="imgRtextL">
+                    <p>
+                        <strong>BASIC STYLE</strong>
+                        기본 로고의 베이직한 스타일로 여름철, 간절기 모두 활용도 높게 착용할 수 있습니다.
+                    </p>
+                    <img src="images/d_stripe_sleev_Navy_detail02.jpg" alt="스트라이프 슬리브리스 detail2">
+                </li>
+                <li class="imgLtextR">
+                    <img src="images/d_stripe_sleev_Navy_detail03.jpg" alt="스트라이프 슬리브리스 detail3">
+                    <p>
+                        <strong>포인트 로고</strong>
+                        앞면 스몰로고, 백면 빅로고 프린트로 포인트를 주었습니다.
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="style page ">
+            <!-- style -->
+            <h2>Style</h2>
+            <img src="http://via.placeholder.com/150" alt="스트라이프 슬리브리스 style1">
+            <img src="http://via.placeholder.com/150" alt="스트라이프 슬리브리스 style2">
+        </div>
+
+        <ul class="tabMenu">
+            <li data-tabNumb='proTab' class="btn_b active">상품 고시정보</li>
+            <li data-tabNumb='deliTab' class="btn_w">반품/교환 정보</li>
+            <li data-tabNumb='cunsulTab' class="btn_w">상품 문의</li>
+        </ul>
+            <!-- 고시정보 -->
+        <table id="proTab" class="active">
+            <caption>상품 고시정보</caption>
+            <tbody>
+                <tr>
+                    <th scope="row">상품코드</th>
+                    <td>DKSL52031-NV</td>
+                </tr>
+                <tr>
+                    <th scope="row">소재</th>
+                    <td>겉감1: 폴리에스터100%, 겉감2: 폴리에스터100%</td>
+                </tr>
+                <tr>
+                    <th scope="row">세탁방법</th>
+                    <td>
+                        <span class="wash_01">물 온도 30ºC에 중성세제 사용하여 손세탁 가능</span>
+                        <span class="wash_02">염소계 표백제로 표백 불가</span>
+                        <span class="wash_03">80-120ºC로 다림질</span>
+                        <span class="wash_04">기계건조 불가</span>
+                        <span class="wash_05">드라이클리닝 불가</span>
+                        <span class="wash_17">불꽃주의</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">주의사항</th>
+                    <td>원단의 특성상 이염의 우려가 있으니 반드시 단독세탁 하십시오.</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 반품교환 -->
+        <table id="deliTab">
+            <caption>반품/교환 정보</caption>
+            <tr>
+                <th scope="row">반품/교환 택배비</th>
+                <td>고객님의 변심으로 인한 반품의 배송비는 고객님 부담입니다. <br>
+                    단, 상품불량 및 오배송 등의 이유로 반품하실 경우 반품 배송비는 무료입니다.<br>
+                    고객변심으로 인한 반품/교환 시 왕복 또는 편도 배송비는 고객님의 부담입니다.<br> (사이즈교환 포함이며, 최초 주문 시 무료배송 받으신 경우 왕복 택배비가
+                    부과됩니다.) 맞교환은 불가하며 교환 반품 상품이 물류센터에 도착하여 확인 후 교환 배송상품이 배송됩니다.</td>
+            </tr>
+            <tr>
+                <th scope="row">반품/교환 시 유의사항</th>
+                <td>교환 / 전체 반품시 5,000원, 부분 반품시 2,500원 </td>
+            </tr>
+            <tr>
+                <th scope="row">반품/교환 가능시점</th>
+                <td>
+                    <span>주문상품 수령 후 사용 및 착용하지 않으신 경우에 한해서, 수령일로부터 7일 이내에 반품이 가능합니다. 한번이라도 착용하여 새제품과 다른 경우는 교환/환불이 불가합니다.</span>
+                    <span>제품에 붙어있는 택을 뜯었거나 상품의 본 박스 (예:신발)에 낙서나 테이핑을 한 경우는 교환/환불이 불가합니다. 구매확정 이후 교환/반품 불가 (배송완료일로부터 7일 이후 자동 구매 확정됩니다.)</span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">반품/교환 불가사유</th>
+                <td>
+                    <span>교환 또는 반품 요청 후 5일 이내에 도착하지 않은 경우</span>
+                    <span>단순변심으로 인한 왕복배송비 5,000원이 입금되지 않은 경우</span>
+                    <span>고객님의 책임있는 사유로 상품이 훼손된 경우</span>
+                    <span>상품 고유의 포장이 훼손되어 상품가치가 상실된 경우 (예:Tag/라벨 등의 훼손)</span>
+                    <span>시간의 경과에 의하여 재판매가 곤란할 정도로 상품가치가 현저히 감소한 경우</span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">반품/교환 참고사항</th>
+                <td>
+                    <span>반품/교환시 고객님 귀책사유로 인해 수거가 지연될 경우에는 반품이 제한될 수 있습니다. </span>
+                    <span>모니터 해상도의 차이로 인해 색상이나 이미지가 실제와 다를 수 있으며, 이로 인한 반품/교환이 제한될 수 있습니다.</span>
+                    <span>일부 상품의 경우 예고없이 가격이 변동 될 수 있으며, 이로 인한 반품 및 가격보상은 불가합니다.</span>
+                    <span>상품 택(Tag), 홀로그램 등을 분리/분실/훼손하여 상품의 가치가 현저히 감소하여 재판매가 불가하였을 경우 반품 및 교환이 제한될 수 있습니다.</span>
+                    <span>상품특성상 측정방법에 따라 표기된 사이즈의 오차가 있을 수 있으며, 이로 인한 반품 및 교환은 제한될 수 있습니다.</span>
+                    <span>일부 세트 상품의 부분 반품 및 교환이 불가하오니 양해바랍니다. 상품의 맞교환은 불가합니다.</span>
+                    <span>교환/환불 절차 내에 여러가지 상황들이 다양하게 생길 수 있으므로 고객을 보호하는 차원에서 한 단계씩 순차적으로 업무처리가 진행됩니다.</span>
+                    <span>상품이 디스커버리 온라인 공식몰 고객센터로 도착한 후에 나머지 절차가 진행될 수 있습니다.</span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">상품반송처</th>
+                <td>
+                    <span>CJ대한통운 : 디스커버리에서 반송 수거 신청해드립니다.</span>
+                    <span>반송처 주소 : (17384) 경기도 이천시 마장면 프리미엄아울렛로 113-37 F&F 물류센터 디스커버리 물류부 디스커버리 온라인 공식몰에서 CJ대한통운으로 상품을 수거 신청해드리니, 타 택배는 이용이 불가한 점 양해 부탁드립니다.</span>
+                    <span>타 택배사 이용하여 착불로 상품 발송시 고객님께 반송되실 수 있습니다.</span>
+                </td>
+            </tr>
+        </table>
+        <!-- 상품문의 -->
+        <form>
+            <fieldset id="cunsulTab">
+                <legend>상품 문의</legend>
+                <ul>
+                    <li>
+                        <label for="proUserEmail">답변 이메일</label>
+                        <input type="email" id="proUserEmail" title="userEmail" required>
+                    </li>
+                    <li>
+                        <label for="proNumb">상품 번호</label>
+                        <input type="text" id="proNumb" value="DKSL52031-NV" disabled title="DKSL52031-NV">
+                    </li>
+                    <li>
+                        <label for="proConsulType">상담분류</label>
+                        <select id="proConsulType" required>
+                            <option value="">선택</option>
+                            <option value="propInfo">상품정보문의</option>
+                            <option value="orderPayment">주문결제문의</option>
+                            <option value="afterService">A/S문의</option>
+                            <option value="orderCancel">취소문의</option>
+                            <option value="propExchange">교환문의</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="proConsulTitle">제목</label>
+                        <input type="text" id="proConsulTitle" placeholder="제목 입력은 30자 미만입니다." title="상담제목" maxlength="30" required>
+                    </li>
+                    <li>
+                        <label for="proConsulText">내용</label>
+                        <textarea id="proConsulText" placeholder="내용 입력은 1000자 미만입니다." title="상담내용" maxlength="1000" required></textarea>
+                    </li>
+                </ul>
+                <input type="submit" value="SAVE" class="btn_b">
+                <input type="reset" value="CANCEL" class="btn_w">
+            </fieldset>
+        </form>
+    </section>
+    <footer class="floatCancel">
+        <div class="mapPopup">
+            <h2>매장 안내</h2>
+            <div>
+                <ul>
+                    <li>
+                        <h3>인천 구월점</h3>
+                    </li>
+                    <li>
+                        <span>주소</span>
+                        <strong>인천광역시 남구 인주대로 494</strong>
+                    </li>
+                    <li>
+                        <span>전화번호</span>
+                        <strong>070-4178-5417</strong>
+                    </li>
+                    <li>
+                        <span>영업시간</span>
+                        <strong>10:30 ~ 20:30</strong>
+                    </li>
+                </ul>
+            </div>
+            <div>map</div>
+            <button class="btn_b">CLOSE</button>
+        </div>
+        <div class="floatCancel">
+            <a href="etc_aboutdiscovery.html">ABOUT DISCOVERY</a>
+            <ul class="floatCancel">
+                <li>
+                    <a href="etc_notice_qna.html">공지사항</a>
+                </li>
+                <li>
+                    <button class="popupBtn etc_map">매장안내</button>
+                </li>
+                <li>
+                    <a href="etc_privacy.html">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="etc_service.html">이용약관</a>
+                </li>
+                <li>
+                    <a href="etc_customer.html">1:1 고객상담</a>
+                </li>
+            </ul>
+            <address>서울특별시 남구 언주로 541 에프앤에프빌딩 호 (주) 에프앤에프 / 대표 : 김창수<br>
+                     사업자등록번호: 214-86-09977 / 통신판매업 신고번호: 제2011-서울강남-00086[사업자정보확인] E-MAIL: discovery@fnfcorp.com | FAX: 02-520-0991<br>
+                     개인정보보호책임자 : 이동국 / 교환 · 반품 반송처: (17384) 경기도 이천시 마장면 프리미엄아울렛로 113-37 F&F 물류센터 디스커버리 물류부</address>
+            <span>
+                <a href="http://blog.naver.com/prologue/PrologueList.nhn?blogId=discovery_kr" target="blank">
+                    blog
+                </a>
+                <a href="https://www.facebook.com/%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%9D%B5%EC%8A%A4%ED%8E%98%EB%94%94%EC%85%98-%ED%82%A4%EC%A6%88-107910730951039/" target="blank">
+                    facebook
+                </a>
+                <a href="https://www.instagram.com/discoveryexpedition_kr/" target="blank">
+                    insta
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- footer fin -->
+</body>
+</html>

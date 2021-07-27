@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Kids</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/bxSlider.js"></script>
+    <script src="js/slide.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside class="cartArea">
+        <div>
+            <h2>My Bag</h2>
+            <button>X</button>
+            <form>
+                <ul>
+                    <li class="floatCancel">
+                        <img src="images/ld_supergraphic_Ivory_f.png" alt="키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티">
+                        <fieldset>
+                            <a href="detail_supergraphic.html">
+                                <strong>키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티</strong>
+                                <span class="supergraphic_wh_Price">49000</span>
+                                <small>WH / 140</small>
+                            </a>
+                            <button type="button" class="supergraphic_wh_Price">－</button>
+                            <input type="text" value="2" id="supergraphic_wh_quantity" title="수량">
+                            <button type="button" class="supergraphic_wh_Price">＋</button>
+                            <label for="supergraphic_wh_Price">주문금액 :</label>
+                            <input type="text" id="supergraphic_wh_Price" value="98000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                    <li class="floatCancel">
+                        <img src="images/ld_fullband_Turquoise_f.png" alt="키즈 풀밴드 타슬란 반바지">
+                        <fieldset>
+                            <a href="detail_fullband.html">
+                                <strong>키즈 풀밴드 타슬란 반바지</strong>
+                                <span class="fullband_tq_Price">49000</span>
+                                <small>TQ / 120</small>
+                            </a>
+                            <button type="button" class="fullband_tq_Price">－</button>
+                            <input type="text" value="1" id="fullband_tq_quantity" title="수량">
+                            <button type="button" class="fullband_tq_Price">＋</button>
+                            <label for="fullband_tq_Price">주문금액 :</label>
+                            <input type="text" id="fullband_tq_Price" value="49000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                </ul>
+                <label for="cartTotalPrice">총 주문금액 :</label>
+                <input type="text" id="cartTotalPrice" value="119000" disabled title="119000">
+                <span>원</span>
+                <input type="submit" value="buy now" class="btn_b">
+            </form>
+        </div>
+    </aside>
+    <header class="noMargin">
+        <ul>
+            <li>우리카드 3만원 이상 결제 시 1만원 즉시 할인</li>
+            <li>카카오페이 30만원 이상 결제 시 1만원 즉시할인</li>
+            <li>온라인 공식몰 회원 단독! 스페셜 혜택 제공</li>
+        </ul>
+        <div>
+            <h1><a href="index.html">logo</a></h1>
+            <span class="floatCancel">
+                <a href="etc_login.html">Sign in</a>
+                <a href="etc_wishlist.html" class="material-icons">favorite_border</a>
+                <button class="material-icons">shopping_cart</button>
+            </span>
+            <button class="material-icons navMui">menu</button>
+        </div>
+        <nav>
+            <ul class="floatCancel">
+                <li>
+                    Outer
+                    <ul>
+                        <li><a href="list_outer_wind.html">바람막이</a></li>
+                        <li><a href="list_outer_jacket.html">자켓</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Top
+                    <ul>
+                        <li><a href="list_top_hoodie.html">맨투맨, 후드</a></li>
+                        <li><a href="list_top_shirt.html">티셔츠</a></li>
+                    </ul>
+                    </li>
+                <li>
+                    Bottom
+                    <ul>
+                        <li><a href="list_bot_short.html">숏팬츠</a></li>
+                        <li><a href="list_bot_pants.html">팬츠</a></li>
+                        <li><a href="list_bot_leggings.html">레깅스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Training Wear
+                    <ul>
+                        <li><a href="list_traning.html">트레이닝 세트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Shoes
+                    <ul>
+                        <li><a href="list_shoes_sliper.html">슬리퍼</a></li>
+                        <li><a href="list_shoes_sport.html">운동화</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Acc
+                    <ul>
+                        <li><a href="list_acc_bag.html">가방</a></li>
+                        <li><a href="list_acc_cap.html">모자</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header fin -->
+    <div class="sliderContainer">
+        <ul class="bxslide">
+            <li>
+                <figure>
+                    <img src="images/m_slide_01.jpg" alt="kids set-up collection">
+                    <figcaption>
+                        <dl>
+                            <dt>
+                                <span><mark>K</mark>IDS SET-UP</span>
+                                <span>COLL<mark>E</mark>CTIO<mark>N</mark></span>
+                            </dt>
+                            <dd>리틀 디스커버러의 데일리 스타일링</dd>
+                        </dl>
+                        <a href="list_top_shirt.html" class="btn_t">VIEW MORE</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/m_slide_02.jpg" alt="kids windbreaker">
+                    <figcaption>
+                        <dl>
+                            <dt>
+                                <span><mark>K</mark>IDS</span>
+                                <span>WIND<mark>B</mark>REAK<mark>E</mark>R</span>
+                            </dt>
+                            <dd>패셔너블한 키즈 바람막이</dd>
+                        </dl>
+                        <a href="list_outer_wind.html" class="btn_t">VIEW MORE</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/m_slide_03.jpg" alt="kids daily school bag&cap">
+                    <figcaption>
+                        <dl>
+                            <dt>
+                                <span><mark>K</mark>IDS DAILY</span>
+                                <span>SC<mark>H</mark>OOL <mark>B</mark>AG &amp; CAP</span>
+                            </dt>
+                            <dd>유니크한 키즈의 패션 포인트</dd>
+                        </dl>
+                        <a href="list_acc_bag.html" class="btn_t">VIEW MORE</a>
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/m_slide_04.jpg" alt="happy smile kids daily shoes">
+                    <figcaption>
+                        <dl>
+                            <dt>
+                                <span><mark>H</mark>APPY SMILE</span>
+                                <span>KIDS <mark>D</mark>AILY SHO<mark>E</mark>S</span>
+                            </dt>
+                            <dd>키즈에게 날개를 달아줄 데일리 슈즈</dd>
+                        </dl>
+                        <a href="list_shoes_sport.html" class="btn_t">VIEW MORE</a>
+                    </figcaption>
+                </figure>
+            </li>
+        </ul>
+        <ol class="customPager">
+            <li>
+                <a data-slide-index="0" class="active">1</a>
+            </li>
+            <li>
+                <a data-slide-index="1">2</a>
+            </li>
+            <li>
+                <a data-slide-index="2">3</a>
+            </li>
+            <li>
+                <a data-slide-index="3">4</a>
+            </li>
+        </ol>
+        <div class="customCont">
+            <a href="" class="btn_Prev"></a>
+            <a href="" class="btn_Next"></a>
+        </div>
+    </div>
+    <!-- slideArea Fin -->
+
+    <section class="styleArea">
+        <h2>stylingArea</h2>
+        <a href="list_style_girl.html">
+            <strong>Girls Styling</strong>
+        </a>
+        <a href="list_style_boy.html">
+            <strong>Boys Styling</strong>
+        </a>
+    </section>
+    <!-- stylingArea fin -->
+
+    <section class="seasonArea">
+        <h2>Season</h2>
+        <ul class="floatCancel">
+            <li>
+                <a href="list_season_spring.html">
+                    <strong>Spring</strong>
+                </a>
+            </li>
+            <li>
+                <a href="list_season_summer.html">
+                    <strong>Summer</strong>
+                </a>
+            </li>
+            <li>
+                <a href="list_season_fall.html">
+                    <strong>Fall</strong>
+                </a>
+            </li>
+            <li>
+                <a href="list_season_winter.html">
+                    <strong>Winter</strong>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- seasonArea fin -->
+    <section class="saleArea">
+        <h2>Sale Items</h2>
+        <ul class="floatCancel">
+            <li>
+                <a href="detail_logotraining.html">
+                    <mark>로고형 트레이닝</mark>
+                    <del>79,000원</del>
+                    <span>47,400원</span>
+                </a>
+            </li>
+            <li>
+                <a href="detail_benf.html">
+                    <mark>패밀리 벤프 반팔티셔츠</mark>
+                    <del>35,000원</del>
+                    <span>24,500원</span>
+                </a>
+            </li>
+            <li>
+                <a href="detail_tricot.html">
+                    <mark>키즈 트리코트 7부팬츠</mark>
+                    <del>59,000원</del>
+                    <span>35,400원</span>
+                </a>
+            </li>
+            <li>
+                <a href="detail_mash.html">
+                    <mark>후디드 매쉬 자켓</mark>
+                    <del>89,000원</del>
+                    <span>44,500원</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- saleArea fin -->
+
+    <section class="latestArea">
+        <h2>Latest Items</h2>
+        <ul class="floatCancel">
+            <li>
+                <figure>
+                    <img src="images/m_latest_01.png" alt="키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티">
+                    <figcaption>
+                        <dl>
+                            <dt>키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티</dt>
+                            <dd>49,000원</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+                <a href="detail_supergraphic.html">arrow bg</a>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/m_latest_02.png" alt="슈퍼 디스커버리 슬라이드 키즈">
+                    <figcaption>
+                        <dl>
+                            <dt>슈퍼 디스커버리 슬라이드 키즈</dt>
+                            <dd>39,000원</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+                <a href="detail_superslide.html">arrow bg</a>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/m_latest_03.png" alt="키즈 풀밴드 타슬란 반바지">
+                    <figcaption>
+                        <dl>
+                            <dt>키즈 풀밴드 타슬란 반바지</dt>
+                            <dd>49,000원</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+                <a href="detail_fullband.html">arrow bg</a>
+            </li>
+            <li>
+                <figure>
+                    <img src="images/m_latest_04.png" alt="키즈 경량바람막이">
+                    <figcaption>
+                        <dl>
+                            <dt>키즈 경량바람막이</dt>
+                            <dd>119,000원</dd>
+                        </dl>
+                    </figcaption>
+                </figure>
+                <a href="detail_lightwind.html">arrow bg</a>
+            </li>
+        </ul>
+    </section>
+    <!-- latestArea fin -->
+
+    <footer class="floatCancel">
+        <div class="mapPopup">
+            <h2>매장 안내</h2>
+            <div>
+                <ul>
+                    <li>
+                        <h3>인천 구월점</h3>
+                    </li>
+                    <li>
+                        <span>주소</span>
+                        <strong>인천광역시 남구 인주대로 494</strong>
+                    </li>
+                    <li>
+                        <span>전화번호</span>
+                        <strong>070-4178-5417</strong>
+                    </li>
+                    <li>
+                        <span>영업시간</span>
+                        <strong>10:30 ~ 20:30</strong>
+                    </li>
+                </ul>
+            </div>
+            <div id="map"></div>
+            <script>
+                var panorama;
+                function initMap() {        
+                //map Load
+                var myLatLng = { lat: 37.45073, lng: 126.69248 };
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: myLatLng,
+                    streetViewControl: true
+                  });
+                
+                    //mapStyle
+                  var styles = [
+                    {
+                        stylers: [
+                          { hue: "#000000" },
+                          { saturation: -100 }
+                        ]
+                    }, {
+                        featureType: "road",
+                        elementType: "geometry", //geometry.fill 지형지물 구조의 채우기, geometry.stroke 지형지물의 스트로크
+                        stylers: [
+                          { lightness: 0 },
+                          { visibility: "simplified" }
+                          //기본 on, off , simplified 가시성은 해당 지형지물에서 일부 스타일 지형지물을 제거
+                        ]
+                    }, {
+                        featureType: "all",
+                        // 지형지물 all : 모든요소 표시, road : 길만 표시
+                        elementType: "labels",
+                        // featureType의 요소에 해당하는 라벨 표시, labels.icon : 지형지물 레이블 내 아이콘만, labels.text : 레이블의 텍스트만 선택, labels.text.fill 레이블의채우기만, label.text.stroke 레이블텍스트의 선만
+                        stylers: [
+                          { visibility: "on" }
+                          // 보여줄거냐 말거냐
+                        ]
+                    }
+                  ];
+        
+                  map.setOptions({ styles: styles });
+        
+                //marker Set
+                  var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: '디스커버리 인천 구월지점'
+                  });
+        
+                //streetView
+                  panorama = map.getStreetView();
+                  panorama.setPosition(myLatLng);
+                  panorama.setPov(/** @type {google.maps.StreetViewPov} */({
+                      heading: 265,
+                      pitch: 0
+                  }));
+        
+                // To add the marker to the map, call setMap();
+                  marker.setMap(map);
+        
+                // infoWindow
+                  var contentString = '<div id="content">' +
+          '<div id="siteNotice">' +
+          '</div>' +
+          '<h1 id="firstHeading" class="firstHeading">디스커버리 인천 구월지점</h1>' +
+          '<div id="bodyContent">' +
+          '<img src="https://via.placeholder.com/150" alt="" />' +
+          '<p>영업시간 : 오후 09:30까지</p>' +
+          '<p>+960 668-0629</p>' +          
+          '<p>Attribution: Conrad Maldives Rangali Island</p>' +
+          '</div>' +
+          '</div>';
+        
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                  });
+                  marker.addListener('click', function () {
+                      infowindow.open(map, marker);
+                  });
+                }
+        
+                //streetView Toggle
+                function toggleStreetView() {
+                    var toggle = panorama.getVisible();
+                    if (toggle == false) {
+                        panorama.setVisible(true);
+                    } else {
+                        panorama.setVisible(false);
+                    }
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqoK5HbnjNFkyBodN1hutws0102x4n5QA&signed_in=true&callback=initMap"></script>
+        
+            <button class="btn_b">CLOSE</button>
+        </div>
+        <div class="floatCancel">
+            <a href="etc_aboutdiscovery.html">ABOUT DISCOVERY</a>
+            <ul class="floatCancel">
+                <li>
+                    <a href="etc_notice_qna.html">공지사항</a>
+                </li>
+                <li>
+                    <button class="popupBtn etc_map">매장안내</button>
+                </li>
+                <li>
+                    <a href="etc_privacy.html">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="etc_service.html">이용약관</a>
+                </li>
+                <li>
+                    <a href="etc_customer.html">1:1 고객상담</a>
+                </li>
+            </ul>
+            <address>서울특별시 남구 언주로 541 에프앤에프빌딩 호 (주) 에프앤에프 / 대표 : 김창수<br>
+                     사업자등록번호: 214-86-09977 / 통신판매업 신고번호: 제2011-서울강남-00086[사업자정보확인] E-MAIL: discovery@fnfcorp.com | FAX: 02-520-0991<br>
+                     개인정보보호책임자 : 이동국 / 교환 · 반품 반송처: (17384) 경기도 이천시 마장면 프리미엄아울렛로 113-37 F&F 물류센터 디스커버리 물류부</address>
+            <span>
+                <a href="http://blog.naver.com/prologue/PrologueList.nhn?blogId=discovery_kr" target="blank">
+                    blog
+                </a>
+                <a href="https://www.facebook.com/%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%9D%B5%EC%8A%A4%ED%8E%98%EB%94%94%EC%85%98-%ED%82%A4%EC%A6%88-107910730951039/" target="blank">
+                    facebook
+                </a>
+                <a href="https://www.instagram.com/discoveryexpedition_kr/" target="blank">
+                    insta
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- footer fin -->
+</body>
+</html>

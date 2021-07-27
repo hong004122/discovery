@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Kids</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/import.css">
+</head>
+<body>
+    <aside class="cartArea">
+        <div>
+            <h2>My Bag</h2>
+            <button>X</button>
+            <form>
+                <ul>
+                    <li class="floatCancel">
+                        <img src="images/ld_supergraphic_Ivory_f.png" alt="키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티">
+                        <fieldset>
+                            <a href="detail_supergraphic.html">
+                                <strong>키즈 패밀리 슈퍼 디스커버리 그래픽 반팔티</strong>
+                                <span class="supergraphic_wh_Price">49000</span>
+                                <small>WH / 140</small>
+                            </a>
+                            <button type="button" class="supergraphic_wh_Price">－</button>
+                            <input type="text" value="2" id="supergraphic_wh_quantity" title="수량">
+                            <button type="button" class="supergraphic_wh_Price">＋</button>
+                            <label for="supergraphic_wh_Price">주문금액 :</label>
+                            <input type="text" id="supergraphic_wh_Price" value="98000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                    <li class="floatCancel">
+                        <img src="images/ld_fullband_Turquoise_f.png" alt="키즈 풀밴드 타슬란 반바지">
+                        <fieldset>
+                            <a href="detail_fullband.html">
+                                <strong>키즈 풀밴드 타슬란 반바지</strong>
+                                <span class="fullband_tq_Price">49000</span>
+                                <small>TQ / 120</small>
+                            </a>
+                            <button type="button" class="fullband_tq_Price">－</button>
+                            <input type="text" value="1" id="fullband_tq_quantity" title="수량">
+                            <button type="button" class="fullband_tq_Price">＋</button>
+                            <label for="fullband_tq_Price">주문금액 :</label>
+                            <input type="text" id="fullband_tq_Price" value="49000" disabled>
+                            <span>원</span>
+                            <input type="button" value="삭제">
+                        </fieldset>
+                    </li>
+                </ul>
+                <label for="cartTotalPrice">총 주문금액 :</label>
+                <input type="text" id="cartTotalPrice" value="119000" disabled title="119000">
+                <span>원</span>
+                <input type="submit" value="buy now" class="btn_b">
+            </form>
+        </div>
+    </aside>
+    <header>
+        <ul>
+            <li>우리카드 3만원 이상 결제 시 1만원 즉시 할인</li>
+            <li>카카오페이 30만원 이상 결제 시 1만원 즉시할인</li>
+            <li>온라인 공식몰 회원 단독! 스페셜 혜택 제공</li>
+        </ul>
+        <div>
+            <h1><a href="index.html">logo</a></h1>
+            <span class="floatCancel">
+                <a href="etc_login.html">Sign in</a>
+                <a href="etc_wishlist.html" class="material-icons">favorite_border</a>
+                <button class="material-icons">shopping_cart</button>
+            </span>
+            <button class="material-icons navMui">menu</button>
+        </div>
+        <nav>
+            <ul class="floatCancel">
+                <li>
+                    Outer
+                    <ul>
+                        <li><a href="list_outer_wind.html">바람막이</a></li>
+                        <li><a href="list_outer_jacket.html">자켓</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Top
+                    <ul>
+                        <li><a href="list_top_hoodie.html">맨투맨, 후드</a></li>
+                        <li><a href="list_top_shirt.html">티셔츠</a></li>
+                    </ul>
+                    </li>
+                <li>
+                    Bottom
+                    <ul>
+                        <li><a href="list_bot_short.html">숏팬츠</a></li>
+                        <li><a href="list_bot_pants.html">팬츠</a></li>
+                        <li><a href="list_bot_leggings.html">레깅스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Training Wear
+                    <ul>
+                        <li><a href="list_traning.html">트레이닝 세트</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Shoes
+                    <ul>
+                        <li><a href="list_shoes_sliper.html">슬리퍼</a></li>
+                        <li><a href="list_shoes_sport.html">운동화</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Acc
+                    <ul>
+                        <li><a href="list_acc_bag.html">가방</a></li>
+                        <li><a href="list_acc_cap.html">모자</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- header fin -->
+    <section class="etcPriService">
+        <ul class="tabBtn floatCancel">
+            <li class="active"><a href="etc_privacy.html">개인정보 처리방침</a></li>
+            <li><a href="etc_service.html">서비스 이용약관</a></li>
+        </ul>
+        <h2>디스커버리 키즈 개인정보 처리방침</h2>
+        <ol>
+            <li><a href="#privacy01">개인정보의 수집항목 및 수집방법</a></li>
+            <li><a href="#privacy02">개인정보의 수집 및 이용목적</a></li>
+            <li><a href="#privacy03">비회원 고객 개인정보 처리</a></li>
+            <li><a href="#privacy04">개인정보 보유/이용기간 </a></li>
+            <li><a href="#privacy05">개인정보 파기 절차 및 방법</a></li>
+            <li><a href="#privacy06">개인정보의 공유 및 제공</a></li>
+            <li><a href="#privacy07">개인정보 처리위탁 </a></li>
+            <li><a href="#privacy08">이용자및 법정대리인의 권리와 그 행사방법 </a></li>
+            <li><a href="#privacy09">개인정보 자동 수집 장치의 설치/운영 및 그 거부에 관한 사항</a></li>
+            <li><a href="#privacy10">개인정보보호를 위한 기술적, 관리적 대책</a></li>
+            <li><a href="#privacy11">개인정보 관련 의견수렴및 불만처리에 관한 사항</a></li>
+            <li><a href="#privacy12">고지의 의무</a></li>
+        </ol>
+        <!-- 제 1조 -->
+        <article id="privacy01">
+            <p>ONE(통합) ID(아이디)로 운영되는 ㈜F&amp;F (이하“회사”라 함)은 “회사”에 가입된 통합된 회원(이하 “회원”이라 함)의 개인정보를 적극적으로 보호하며, 통신비밀보호법, 전기통신사업법, 정보통신망이용촉진 및 정보보호등에 관한 법률 등 정보통신서비스 제공자가 준수하여야 할 관련 법령을 준수하며, “회사”는 관련 법령에 의거한 개인정보 처리방침(이하 “개인정보처리방침”이라고 함)을 정하여 이용자 권익 보호에 최선을 다하고 있습니다. “회사”는 “개인정보처리방침”을 통해 “회원”의 개인정보가 어떤 목적으로 수집되고 어떻게 보호조치가 되고 있는지 알려드리며, 이는 관련 법령, 지침 및 “회사” 내부 운영방침의 변경에 따라 변경될 수 있습니다. 만약 변경사항이 발생 할 경우에는 관련 법령이 정하는 방법에 따라 고지하고 있습니다. 본 방침에 기재된 사항 이외 서비스 이용에 있어 별도로 필요한 개인정보수집 및 활용에 관한 자세한 사항은 “회사”가 운영하는 사이트에 게재되어 있는 “개인정보처리방침”에 따릅니다.</p>
+            <h3>제1조 개인정보의 수집항목 및 수집방법</h3>
+            <ul>
+                <li>
+                    회사는 회원에게 서비스를 제공하기 위해 다음과 같은 개인정보를 수집합니다.
+                    <ol>
+                        <li class="marginList">
+                            수집하는 개인정보 항목에 따른 구체적인 수집 이용목적은 다음과 같습니다.
+                            <table>
+                                <caption>- 필수사항</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">수집/이용 항목</th>
+                                        <th scope="col">수집/이용 목적</th>
+                                        <th scope="col">보유 및 이용기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>성명, 생년월일(14세 미만 가입 확인), 아이디, 비밀번호, e-mail, 전화번호,(휴대폰번호 포함), 주소, e-mail/SMS/DM 수신동의 여부</td>
+                                        <td>
+                                            <span>- 가입</span>
+                                            <span>- 본인확인</span>
+                                            <span>- 부정이용 확인•방지, 성인인증</span>
+                                            <span>- 서비스 이용 및 상담</span>
+                                        </td>
+                                        <td>
+                                            <span>- 회원 탈퇴 시 즉시 삭제</span>
+                                            <span>- 아이디는 재가입 방지를 위해 1개월 보관 후 삭제</span>
+                                            <span>- 구매회원의 경우 5년 보관(전자상거래 등에서의 소비자보호에 관한 법률)</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>성명, 생년월일, 성별, 휴대폰번호,암호화된 동일인 식별정보(CI), 중복가입확인정보(DI)</td>
+                                        <td>
+                                            <span>- 본인확인</span>
+                                            <span>- 부정이용방지</span>
+                                        </td>
+                                        <td>
+                                            <span>- 회원 탈퇴 시 즉시 삭제</span>
+                                            <span>- CI값은 재가입 방지를 위해 1개월 보관 후 삭제</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>수취인 정보(성명, 전화번호, 주소)</td>
+                                        <td>배송</td>
+                                        <td rowspan="3">5년 보관(전자상거래 등에서의 소비자보호에 관한 법률)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>신용카드 : 카드사명, 카드번호, 유효기간</span>
+                                            <span>휴대전화 : 휴대전화번호, 통신사</span>
+                                            <span>계좌이체 : 은행명, 계좌번호</span>
+                                            <span>무통장입금 : 은행명, 입금자명</span>
+                                            <span>현금영수증정보</span>
+                                        </td>
+                                        <td>결제</td>
+                                    </tr>
+                                    <tr>
+                                        <td>은행명, 계좌번호</td>
+                                        <td>취소/환불</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table>
+                                <caption>- 선택사항</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">수집/이용 항목</th>
+                                        <th scope="col">수집/이용 목적</th>
+                                        <th scope="col">보유 및 이용기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>결혼 여부, 자녀 수, 자녀 생년월일, 기타 기념일 등 개인별 서비스 제공을 위해 필요한 항목 및 추가 입력 사항</td>
+                                        <td>마케팅 및 이벤트분석</td>
+                                        <td>회원 탈퇴 시 즉시 삭제</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="marginList">
+                            회사는 다음과 같은 방법으로 개인정보를 수집합니다.
+                            <p>- 온라인쇼핑몰, 브랜드 홈페이지 및 회사와 계약된 가맹점(백화점, 대리점 외) 회원가입 신청서</p>
+                            <p>- 팩스, 전화, 고객상담(상담게시판), e-mail, 이벤트 응모, 주문&amp;배송요청 등</p>
+                            <p>- 쿠키(cookie)에 의한 정보 수집</p>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 2조 -->
+        <article id="privacy02">
+            <h3>제2조 개인정보의 수집 및 이용목적</h3>
+            <ul>
+                <li>회사는 다음의 목적을 위해 개인정보를 수집합니다. 회사가 수집한 개인정보는 다음의 목적 이외의 용도로는 사용하지 않으며, 이용 목적이 변경될 경우 회사는 개인정보보호법 등 관련 법령에 따라 고객으로부터 별도의 동의를 받는 등 필요한 조치를 이행할 것입니다.
+                    <ol>
+                        <li>회원관리(회원가입을 하는 경우에 한함) 회원 가입 시 본인확인 절차에 이용, 고지사항 전달, 청구서, 정확한 상품 배송지 확보, 불만처리, 개인식별 등 상담요청에 대한 회신</li>
+                        <li>서비스 제공에 관한 계약 이행 및 서비스 제공에 따른 요금정산 콘텐츠 제공, 물품(상품 또는 경품) 배송 또는 청구서 등 발송, 금융거래, 본인인증, 구매 및 대금결제, 요금추심, 신상품이나 이벤트 정보안내</li>
+                        <li>이벤트 정보 안내 등 광고성 정보 전달 및 서비스 품질 향상을 위한 각종 설문조사</li>
+                        <li>단, “회원”이 서비스 혜택 정보 제공을 원치 않는다는 의사를 명확히 밝히는 경우 정보 제공을 하지 않으며, 이 경우 “회원”에게 정보 미 제공으로 인한 불이익이 발생하더라도 “회사”가 책임지지 않습니다.</li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 3조 -->
+        <article id="privacy03">
+            <h3>제3조 비회원 고객 개인정보 처리</h3>
+            <ul>
+                <li>회사는 회원 고객 뿐만 아니라 비회원 고객 또한 물품 및 서비스 상품 구매할 수 있으며, 비회원 주문의 경우 배송 및 대금결제, 상품 배송에 반드시 필요한 개인정보만을 본인에게 요청하고 있습니다.</li>
+                <li>회사는 비회원 고객으로 구매한 비회원 고객이 입력한 지불인 정보 및 수령인 정보는 대금 결제 및 상품 배송에 관련한 용도 외에는 다른 어떠한 용도로도 이용되지 않습니다.</li>
+            </ul>
+        </article>
+        <!-- 제 4조 -->
+        <article id="privacy04">
+            <h3>제4조 개인정보 보유/이용기간</h3>
+            <ul>
+                <li>이용자의 개인정보는 원칙적으로 개인정보의 수집목적 또는 제공받은 목적이 달성되면 지체 없이 파기합니다. 다만, 상법, 전자상거래 등에서의 소비자보호에 관한 법률 등 관계법령의 규정에 의하여 보존할 필요가
+                    있는 경우 “회사”는 관계법령에서 정한 일정한 기간 동안 “회원”정보를 보관합니다. 이 경우 “회사”는 보관하는 정보를 그 보관의 목적으로만 이용하며 보존기간은 아래와 같습니다.
+                    <ol>
+                        <li class="marginList">“회사” 내부 방침에 의한 정보보유 사유
+                            <table>
+                                <caption>“회사” 내부 방침에 의한 정보보유 사유</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">보존이유</th>
+                                        <th scope="col">보존기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>부정이용기록</td>
+                                        <td>부정 이용 방지</td>
+                                        <td>1년</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="marginList">관련법령에 의한 정보보유 
+                            <table>
+                                <caption>관령법령에 의한 정보보유 사유</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">보존이유</th>
+                                        <th scope="col">보존기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>방문에 관한 기록</td>
+                                        <td>통신비밀보호법</td>
+                                        <td>3개월</td>
+                                    </tr>
+                                    <tr>
+                                        <td>본인 확인에 관한 기록</td>
+                                        <td>정보통신 이용촉진 및 정보보호 등에 관한 법률</td>
+                                        <td>6개월</td>
+                                    </tr>
+                                    <tr>
+                                        <td>계약 또는 청약철회 등에 관한 기록</td>
+                                        <td>전자상거래 등에서의 소비자보호에 관한 법률</td>
+                                        <td>5년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>대금결제 및 재화 등의 공급에 관한 기록</td>
+                                        <td>전자상거래 등에서의 소비자보호에 관한 법률</td>
+                                        <td>5년</td>
+                                    </tr>
+                                    <tr>
+                                        <td>소비자의 불만 또는 분쟁처리에 관한 기록</td>
+                                        <td>전자상거래 등에서의 소비자보호에 관한 법률</td>
+                                        <td>3년</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                        <li class="marginList">개인정보 유효기간 시행
+                            <p>회사는 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 제29조 제2항 및 동법 시행령 제16조의 규정에 따라 1년간 이용내역이 없는 회원의 개인정보를 회사는 법정보관기간 경과 후 파기하며, 이에 따라 회원은 회원자격을 상실할 수 있습니다. 또한, 파기 30일 전까지 개인정보가 파기되는 사실과 기간 만료 일 및 해당 개인정보의 항목을 전자우편•서면•모사전송•전화 또는 이와 유사한 방법 중 어느 하나의 방법으로 회원에게 알립니다.</p>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 5조 -->
+        <article id="privacy05">
+            <h3>제5조 개인정보 파기 절차 및 방법</h3>
+            <ul>
+                <li>“회사”는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. “회사”의 개인정보 파기절차 및 방법은 다음과 같습니다.
+                    <ol>
+                        <li class="marginList">
+                            파기시점
+                            <p>- 회원가입 정보 : 회원을 탈퇴하거나 회원에서 제명된 때</p>
+                            <p>- 대금지급 정보 : 대금의 완제일 또는 채권소멸시효기간이 만료된 때</p>
+                            <p>- 배송 정보 : 재화 또는 용역 등 상품이 인도되거나 제공된 때</p>
+                            <p>- 설문조사, 이벤트 등 일시적 목적을 위하여 수집한 경우 : 당해 설문조사, 이벤트 등이 종료한 때</p>
+                        </li>
+                        <li class="marginList">
+                            파기절차
+                            <p>- “회원”님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라 (보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다.</p>
+                            <p>- 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.</p>
+                        </li>
+                        <li class="marginList">
+                            파기방법
+                            <p>- 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.</p>
+                            <p>- 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.</p>
+                        </li>
+                        <li class="marginList">
+                            장기 미이용 회원
+                            <p>- 1년동안 온라인쇼핑몰 &amp; 오프라인 매장에서 이용 기록이 없는 회원을 말합니다.</p>
+                            <p>- 정보통신망이용촉진 및 정보보호에 관한 법률 제29조 및 동시행령 제16조에 의거, 개인정보는 서버에서 분리보관 하여 안전하게 보관되며, 분리 보관일 30일 이전에 e-mail을 통해 안내됩니다.</p>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 6조 -->
+        <article id="privacy06">
+            <h3>제6조 개인정보의 공유 및 제공</h3>
+            <ul>
+                <li>“회사”는 “회원”들의 개인정보를 ‘2. 개인정보의 수집 및 이용목적’의 고지한 범위 내에서 사용하며, “회원”의 사전 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 “회원”의 개인정보를 외부에 공개하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.
+                    <ol>
+                        <li>이용자들이 사전에 동의한 경우</li>
+                        <li>법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사 기관의 요구가 있는 경우</li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 7조 -->
+        <article id="privacy07">
+            <h3>제7조 개인정보 처리 위탁</h3>
+            <ul>
+                <li>회사는 서비스의 향상 및 상품서비스의 제공 등을 위해 개인정보 처리 업무의 일부를 외부 전문업체에 다음과 같이 일부 위탁하고 있습니다.
+                    <ol>
+                        <li class="marginList">
+                            개인정보 처리 위탁
+                            <table>
+                                <caption>개인정보 처리 위탁</caption>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">수탁자</th>
+                                        <th scope="col">위탁업무 내용</th>
+                                        <th scope="col">제공정보</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>NICE신용평가정보㈜</td>
+                                        <td>회원 실명&amp;본인 인증</td>
+                                        <td>회원정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CJ대한통운, 한진택배</td>
+                                        <td>제품 및 경품 배송</td>
+                                        <td>주문정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜F&amp;F로지스틱스</td>
+                                        <td>온라인 주문 건 출고(물류창고)</td>
+                                        <td>주문정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜한국사이버결제</td>
+                                        <td rowspan="2">결제대행업무</td>
+                                        <td rowspan="2">구매정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>네이버㈜</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세일즈포스, ㈜씨제이올리브네트웍스, ㈜KT</td>
+                                        <td>SMS/LMS/MMS 발송</td>
+                                        <td>회원정보, 주문정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세일즈포스, ㈜씨제이올리브네트웍스, LG CNS</td>
+                                        <td>카카오 알림톡/비즈톡/친구톡 발송</td>
+                                        <td>회원정보, 주문정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세일즈포스, ㈜씨제이올리브네트웍스, ㈜다우기술</td>
+                                        <td>E-mail 발송</td>
+                                        <td>회원정보, 주문정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>세일즈포스, ㈜씨제이올리브네트웍스</td>
+                                        <td>APP Push 발송</td>
+                                        <td>회원정보, 주문정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>SK플래닛㈜ 비즈콘,(주)케이티엠하우스</td>
+                                        <td>모바일 쿠폰 발송</td>
+                                        <td>회원정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜아림디엠, ㈜오리진커뮤니케이션, 디엠월드</td>
+                                        <td>DM발송</td>
+                                        <td>회원정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>금강, 미래, BONEFORM,일심사, 세영사, 슈바치, 한솔기업, 맥가이버</td>
+                                        <td>제품 수선 AS업무</td>
+                                        <td>회원정보, 구매정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>메타넷 플랫폼</td>
+                                        <td>고객응대 및 불만처리</td>
+                                        <td>회원정보, 구매정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜플랜잇파트너스, 디자이노블</td>
+                                        <td>개인 구매정보를 활용한 데이터분석</td>
+                                        <td>회원정보, 구매정보, 마일리지정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜크리마팩토리</td>
+                                        <td>DM발송 및 상품추천 서비스 제공</td>
+                                        <td>회원정보, 장바구니정보, 구매정보, 배송정보</td>
+                                    </tr>
+                                    <tr>
+                                        <td>㈜웨이브</td>
+                                        <td>온라인 쇼핑몰 개발 및 유지보수</td>
+                                        <td>회원정보, 구매정보, 배송정보</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 8조 -->
+        <article id="privacy08">
+            <h3>제8조 이용자 및 법정대리인의 권리와 그 행사방법</h3>
+            <ul>
+                <li>이용자 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며, 가입 해지를 요청할 수도 있습니다.</li>
+                <li>이용자 혹은 만 14세 미만 아동의 개인정보 조회/수정을 위해서는 “개인정보변경“(또는“회원정보수정“ 등)을, 가입해지(동의철회) 를 위해서는 ‘회원탈퇴’를 클릭하여 본인 확인 절차를 거치신 후 직접 열람, 정정 또는 탈퇴가 가능합니다. 혹은 개인정보보호책임자에게 서면, 전화 또는 이메일로 연락하시면 지체 없이 조치하겠습니다.</li>
+                <li>이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다. 또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.</li>
+                <li>“회사”는 이용자 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보는 ‘3. 개인정보의 보유/이용기간’에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.</li>
+            </ul>
+        </article>                
+        <!-- 제 9조 -->
+        <article id="privacy09">
+            <h3>제9조 개인정보 자동 수집 장치의 설치/운영 및 그 거부에 관한 사항</h3>
+            <ul>
+                <li>고객 개개인에게 개인화되고 맞춤화 된 서비스를 제공하기 위해서 당사는 고객의 정보를 저장하고 수시로 찾아내는 “쿠키(cookie)“를 사용합니다. 쿠키는 사이트가 “회원”의 브라우저에게 보내는 소량의 정보이며 “회원” 컴퓨터의 하드디스크에 저장됩니다.</li>
+                <li class="marginList">쿠키 등 사용 목적
+                    <ol>
+                        <li>“회원”과 “비회원”의 접속 빈도나 방문 시간 등을 분석, 이용자의 취향과 관심분야를 파악 및 자취 추적, 각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및 개인 맞춤 서비스 제공 등을 위하여 사용합니다. 쿠키는 브라우저의 종료시나 로그아웃 시 만료 됩니다.</li>
+                        <li>쿠키 설치에 대한 선택권을 가지고 있습니다. 웹브라우저에서 옵션을 설정함으로써 모든 쿠키를 허용하거나, 쿠키가 저장될 때마다 확인을 거치거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</li>
+                    </ol>
+                </li>
+                <li class="marginList">쿠키 설정 거부 방법
+                    <ol>
+                        <li>“회원”님이 사용하시는 웹브라우저의 옵션을 설정함으로써 모든 쿠키를 허용하거나 쿠키가 저장될 때마다 확인을 거치거나, 모든 쿠키의 저장을 거부할 수도 있습니다. 단, 쿠키의 저장을 거부할 경우에는 로그인이 필요한 일부 서비스는 이용할 수 없습니다.</li>
+                        <li>설정방법 예(인터넷 익스플로어의 경우) : 웹 브라우저 상단의 도구 &gt; 인터넷 옵션 &gt; 개인정보단, 고객이 쿠키 설치를 거부하는 경우 로그인이 필요한 일부 서비스 제공에 어려움이 있을 수 있습니다.</li>
+                    </ol>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 10조 -->
+        <article id="privacy10">
+            <h3>제10조 개인정보보호를 위한 기술적, 관리적 대책</h3>
+            <ul>
+                <li class="marginList">회사는 고객의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여 다음과 같은 기술적 대책을 강구하고 있습니다.
+                    <ol>
+                        <li> 고객의 비밀번호는 암호화되어 안전하게 저장 및 관리되고 있으며, 개인정보의 확인 및 변경도 비밀번호를 알고 있는 본인에 한해서만 가능합니다.</li>
+                        <li> 회사는 해킹 등에 의해 고객의 개인정보가 유출되는 것을 방지하기 위해, 외부로부터 침입을 막기 위해 최선을 다하고 있습니다. 최신 백신 프로그램을 이용하여 이용자들의 개인정보가 누출되거나 손상되지 않도록 방지하고 있습니다.</li>
+                        <li> 회사의 개인정보관련 취급 직원은 담당자에 한정시키고 있고 이를 위한 별도의 비밀번호를 부여하여 정기적으로 갱신하고 있으며, 담당자에 대한 수시 교육을 통하여 ㈜F&F 개인정보 처리방침의 준수를 강조하고 있습니다.</li>
+                        <li> 이용자가 사용하는 ID와 비밀번호는 원칙적으로 이용자만이 사용하도록 되어 있습니다. 당사는 이용자의 개인적인 부주의로 ID, 비밀번호 등 개인정보가 유출되어 발생한 문제와 기본적인 인터넷의 위험성 때문에 일어나는 일들에 대해 책임을 지지 않습니다.</li>
+                    </ol>
+                </li>
+                <li>비밀번호에 대한 보안 의식을 가지고 비밀번호를 자주 변경하며, 공공PC에서의 로그인시 개인정보가 유출되지 않도록 각별한 주의를 기울여 주시기 바랍니다.</li>
+            </ul>
+        </article>
+        <!-- 제 11조 -->
+        <article id="privacy11">
+            <h3>제11조 개인정보관련 의견수렴 및 불만처리에 관한 사항</h3>
+            <ul>
+                <li class="marginList">회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보담당 부서 및 개인정보보호책임자를 지정하고 있습니다.
+                    <p>[개인정보보호 책임자]<br>
+                        담당부서 : 디지털트랜스포메이션<br>
+                        성명 : 이동국<br>
+                        직위 : 이사<br>
+                    </p>
+                    <p>
+                        [개인정보보호 담당자]<br>
+                        담당부서 : 디지털트랜스포메이션<br>
+                        성명 : 백광민<br>
+                        직위 : 책임<br>
+                        문의처 : 02-520-6343<br>
+                        E-Mail : kmback@fnfcorp.com<br>
+                    </p>
+                </li>
+                <li class="marginList">
+                    “회사”의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보보호책임자 혹은 담당부서로 신고 하실 수 있습니다. “당사”와 “관계사”는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.기타 개인정보 침해에 대한 신고나 상담이 필요하신 경우에는 아래 기관에 문의하시기 바랍니다.
+                    <table>
+                        <caption>개인정보 침해 시 상담기관</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">기관명</th>
+                                <th scope="col">홈페이지</th>
+                                <th scope="col">전화번호</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>개인정보 침해신고센터</td>
+                                <td>http://privacy.kisa.or.kr</td>
+                                <td>국번없이 118</td>
+                            </tr>
+                            <tr>
+                                <td>대검찰청 사이버 수사과</td>
+                                <td>http://www.kopico.or.kr</td>
+                                <td>국번없이 1301</td>
+                            </tr>
+                            <tr>
+                                <td>개인정보 분쟁조정위원회</td>
+                                <td>http://www.kopico.or.kr</td>
+                                <td>국번없이 1336</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </li>
+            </ul>
+        </article>
+        <!-- 제 12조 -->
+        <article id="privacy12">
+            <h3>[제12조] 고지의 의무</h3>
+            <ul>
+                <li>관련 정책 또는 보안 기술의 변경에 따라 개인정보처리방침 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 홈페이지의 “공지사항“을 통해 고지할 것입니다.
+                    <p>- 개인정보처리방침 버전번호 v2.7<br>
+                        - 개인정보처리방침 시행일자 : 2021년 01월 15일
+                    </p>
+                </li>
+            </ul>
+        </article>
+    </section>
+    <footer class="floatCancel">
+        <div class="mapPopup">
+            <h2>매장 안내</h2>
+            <div>
+                <ul>
+                    <li>
+                        <h3>인천 구월점</h3>
+                    </li>
+                    <li>
+                        <span>주소</span>
+                        <strong>인천광역시 남구 인주대로 494</strong>
+                    </li>
+                    <li>
+                        <span>전화번호</span>
+                        <strong>070-4178-5417</strong>
+                    </li>
+                    <li>
+                        <span>영업시간</span>
+                        <strong>10:30 ~ 20:30</strong>
+                    </li>
+                </ul>
+            </div>
+            <div>map</div>
+            <button class="btn_b">CLOSE</button>
+        </div>
+        <div class="floatCancel">
+            <a href="etc_aboutdiscovery.html">ABOUT DISCOVERY</a>
+            <ul class="floatCancel">
+                <li>
+                    <a href="etc_notice_qna.html">공지사항</a>
+                </li>
+                <li>
+                    <button class="popupBtn etc_map">매장안내</button>
+                </li>
+                <li>
+                    <a href="etc_privacy.html">개인정보처리방침</a>
+                </li>
+                <li>
+                    <a href="etc_service.html">이용약관</a>
+                </li>
+                <li>
+                    <a href="etc_customer.html">1:1 고객상담</a>
+                </li>
+            </ul>
+            <address>서울특별시 남구 언주로 541 에프앤에프빌딩 호 (주) 에프앤에프 / 대표 : 김창수<br>
+                     사업자등록번호: 214-86-09977 / 통신판매업 신고번호: 제2011-서울강남-00086[사업자정보확인] E-MAIL: discovery@fnfcorp.com | FAX: 02-520-0991<br>
+                     개인정보보호책임자 : 이동국 / 교환 · 반품 반송처: (17384) 경기도 이천시 마장면 프리미엄아울렛로 113-37 F&F 물류센터 디스커버리 물류부</address>
+            <span>
+                <a href="http://blog.naver.com/prologue/PrologueList.nhn?blogId=discovery_kr" target="blank">
+                    blog
+                </a>
+                <a href="https://www.facebook.com/%EB%94%94%EC%8A%A4%EC%BB%A4%EB%B2%84%EB%A6%AC%EC%9D%B5%EC%8A%A4%ED%8E%98%EB%94%94%EC%85%98-%ED%82%A4%EC%A6%88-107910730951039/" target="blank">
+                    facebook
+                </a>
+                <a href="https://www.instagram.com/discoveryexpedition_kr/" target="blank">
+                    insta
+                </a>
+            </span>
+        </div>
+    </footer>
+    <!-- footer fin -->
+</body>
+</html>
