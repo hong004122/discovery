@@ -205,11 +205,101 @@
                     </li>
                     <li>
                         <span>영업시간</span>
-                        <strong>10:30 ~ 20:30</strong>
+                        <strong>10:00 ~ 21:30</strong>
                     </li>
                 </ul>
             </div>
-            <div>map</div>
+            <div id="map"></div>
+            <script>
+                var panorama;
+                function initMap() {        
+                //map Load
+                var myLatLng = { lat: 37.45073, lng: 126.69248 };
+                  var map = new google.maps.Map(document.getElementById('map'), {
+                    zoom: 17,
+                    center: myLatLng,
+                    streetViewControl: true
+                  });
+                
+                    //mapStyle
+                  var styles = [
+                    {
+                        stylers: [
+                          { hue: "#000000" },
+                          { saturation: -100 }
+                        ]
+                    }, {
+                        featureType: "road",
+                        elementType: "geometry", //geometry.fill 지형지물 구조의 채우기, geometry.stroke 지형지물의 스트로크
+                        stylers: [
+                          { lightness: 0 },
+                          { visibility: "simplified" }
+                          //기본 on, off , simplified 가시성은 해당 지형지물에서 일부 스타일 지형지물을 제거
+                        ]
+                    }, {
+                        featureType: "all",
+                        // 지형지물 all : 모든요소 표시, road : 길만 표시
+                        elementType: "labels",
+                        // featureType의 요소에 해당하는 라벨 표시, labels.icon : 지형지물 레이블 내 아이콘만, labels.text : 레이블의 텍스트만 선택, labels.text.fill 레이블의채우기만, label.text.stroke 레이블텍스트의 선만
+                        stylers: [
+                          { visibility: "on" }
+                          // 보여줄거냐 말거냐
+                        ]
+                    }
+                  ];
+        
+                  map.setOptions({ styles: styles });
+        
+                //marker Set
+                  var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: '디스커버리 인천 구월지점'
+                  });
+        
+                //streetView
+                  panorama = map.getStreetView();
+                  panorama.setPosition(myLatLng);
+                  panorama.setPov(/** @type {google.maps.StreetViewPov} */({
+                      heading: 265,
+                      pitch: 0
+                  }));
+        
+                // To add the marker to the map, call setMap();
+                  marker.setMap(map);
+        
+                // infoWindow
+                  var contentString = '<div id="content">' +
+          '<div id="siteNotice">' +
+          '</div>' +
+          '<h1 id="firstHeading" class="firstHeading">디스커버리 인천 구월지점</h1><br>' +
+          '<div id="bodyContent">' +
+          '<img src="images/f_mapInfoImg.jpg" alt="디스커버리 인천 구월지점 매장" />' +
+          '<p>영업시간 : 10:00 ~ 21:30</p>' +
+          '<p>070-4178-5417</p>' + 
+          '</div>' +
+          '</div>';
+        
+                  var infowindow = new google.maps.InfoWindow({
+                      content: contentString
+                  });
+                  marker.addListener('click', function () {
+                      infowindow.open(map, marker);
+                  });
+                }
+        
+                //streetView Toggle
+                function toggleStreetView() {
+                    var toggle = panorama.getVisible();
+                    if (toggle == false) {
+                        panorama.setVisible(true);
+                    } else {
+                        panorama.setVisible(false);
+                    }
+                }
+            </script>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqoK5HbnjNFkyBodN1hutws0102x4n5QA&signed_in=true&callback=initMap"></script>
+        
             <button class="btn_b">CLOSE</button>
         </div>
         <div class="floatCancel">
