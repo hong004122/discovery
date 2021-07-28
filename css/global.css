@@ -51,6 +51,7 @@ section.etcAboutBox ul li span,
 footer div:last-child > a{
     font-family: 'GT Walsheim Pro';
 }
+*[class^="btn"]:not(ul li),
 aside.cartArea div ul li fieldset a strong,
 aside.cartArea div label,
 aside.cartArea div span,

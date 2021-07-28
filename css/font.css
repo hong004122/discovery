@@ -1,13 +1,7 @@
-@font-face {
-    font-family: GT Walsheim Pro;
-    src: local("GT Walsheim Pro Regular"),local("GTWalsheimProRegular"),url("GTWalsheimProRegular.woff2") format("woff2"),url("GTWalsheimProRegular.woff") format("woff"),url("GTWalsheimProRegular.ttf") format("truetype");
-    font-weight: 400;
-    font-style: normal;
-}
-  
-  @font-face {
-    font-family: GT Walsheim Pro;
-    src: local("GT Walsheim Pro Bold"),local("GTWalsheimProBold"),url("GTWalsheimProBold.woff2") format("woff2"),url("GTWalsheimProBold.woff") format("woff"),url("GTWalsheimProBold.ttf") format("truetype");
-    font-weight: 700;
-    font-style: normal;
-}
+@font-face {font-family: "GT Walsheim Pro";
+    src: url("https://db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.eot"); 
+    src: url("https://db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.eot?#iefix") format("embedded-opentype"), 
+    url("https://db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.woff2") format("woff2"), 
+    url("https://db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.woff") format("woff"), 
+    url("https://db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.ttf") format("truetype"), 
+    url("https://db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.svg#GT Walsheim") format("svg");}
