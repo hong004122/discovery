@@ -5,7 +5,7 @@ var styleImg = '';
 var styleArea = '';
 
 $(document).ready(function(){
-    foldFlex();
+    // foldFlex();
     detailInit();
     btnSelect(".information li:nth-of-type(2) input[type='button']",".information li input[type='button']");
     btnSelect("ul.information li:nth-child(3) input[type='button']","ul.information li:nth-child(3) input[type='button']")
@@ -30,20 +30,20 @@ function btnSelect(selectBtn, classChange){
     });
 }
 
-function foldFlex(){
-    var foldWidth = $(window).width();
-    if(foldWidth < 320){
-        $('section.detailContainer .wrap form fieldset ul.information li[class="fiveColor"]').addClass('fold');
-        window.onresize = function(){
-            document.location.reload();
-        }
-    }else if(foldWidth > 320){
-        $('section.detailContainer .wrap form fieldset ul.information li[class="fiveColor"]').removeClass('fold');
-        window.onresize = function(){
-            document.location.reload();
-        }
-    }
-}
+// function foldFlex(){
+//     var foldWidth = $(window).width();
+//     if(foldWidth < 320){
+//         $('section.detailContainer .wrap form fieldset ul.information li[class="fiveColor"]').addClass('fold');
+//         window.onresize = function(){
+//             document.location.reload();
+//         }
+//     }else if(foldWidth > 320){
+//         $('section.detailContainer .wrap form fieldset ul.information li[class="fiveColor"]').removeClass('fold');
+//         window.onresize = function(){
+//             document.location.reload();
+//         }
+//     }
+// }
 
 function totalPrice(){
     var probQuantity = Number($('section.detailContainer .wrap form fieldset ul.information li:nth-child(4) input[type="text"]').val());
