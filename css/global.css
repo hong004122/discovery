@@ -1,3 +1,6 @@
+html{
+    overscroll-behavior: contain;
+}
 body{
     background-repeat: repeat-y;
     background-position: left top, right top;
@@ -11,7 +14,6 @@ body.listBg{
     background-image: url('../images/listBG_L.jpg'), url('../images/listBG_R.jpg');
     background-color: #ededed;
 }
-*[class^="btn"]:not(ul li),
 aside.cartArea div > *:not(form),
 aside.cartArea div ul li fieldset a *:not(strong),
 aside.cartArea div input[type="text"],
