@@ -1,7 +1,21 @@
-@font-face {font-family: "Gt";
-    src: url("//db.onlinewebfonts.com/t/8d026c963e4feb5053ef8b0cf5ca1910.eot");
-    src: url("https://db.onlinewebfonts.com/t/8d026c963e4feb5053ef8b0cf5ca1910.eot?#iefix") format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/8d026c963e4feb5053ef8b0cf5ca1910.woff2") format("woff2"),
-    url("https://db.onlinewebfonts.com/t/8d026c963e4feb5053ef8b0cf5ca1910.woff") format("woff"),
-    url("https://db.onlinewebfonts.com/t/8d026c963e4feb5053ef8b0cf5ca1910.ttf") format("truetype"),
-    url("https://db.onlinewebfonts.com/t/8d026c963e4feb5053ef8b0cf5ca1910.svg#Gt") format("svg"); }
+@font-face {font-family: "GT Walsheim Regular"; src:
+    url("//db.onlinewebfonts.com/t/768446cc3d04d6dd3289ae1715bdb682.eot"); src:
+    url("//db.onlinewebfonts.com/t/768446cc3d04d6dd3289ae1715bdb682.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/768446cc3d04d6dd3289ae1715bdb682.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/768446cc3d04d6dd3289ae1715bdb682.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/768446cc3d04d6dd3289ae1715bdb682.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/768446cc3d04d6dd3289ae1715bdb682.svg#GT Walsheim Regular") format("svg");}
+@font-face {font-family: "GT Walsheim Light"; src:
+    url("//db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.eot"); src:
+    url("//db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/6d7bf85888fc8ef4357e0a27a0db8ce6.svg#GT Walsheim Light") format("svg"); }
+@font-face {font-family: "GT Walsheim Bold"; src:
+    url("//db.onlinewebfonts.com/t/91e0638dac19aba2539d2b8b2a7981e8.eot"); src:
+    url("//db.onlinewebfonts.com/t/91e0638dac19aba2539d2b8b2a7981e8.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/91e0638dac19aba2539d2b8b2a7981e8.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/91e0638dac19aba2539d2b8b2a7981e8.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/91e0638dac19aba2539d2b8b2a7981e8.ttf") format("truetype"),
+    url("//db.onlinewebfonts.com/t/91e0638dac19aba2539d2b8b2a7981e8.svg#GT Walsheim Bold") format("svg"); }
