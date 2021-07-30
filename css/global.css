@@ -436,8 +436,8 @@ select{
         background-color: #0b1124; position: relative; padding: 40px 2%;
     }
     footer .mapPopup{
-        position: absolute; left: 0; top: -700px; background-color: white;
-        width: 50%; min-width: 265px; border: 2px solid #242424;
+        position: absolute; left: 10px; top: -700px; background-color: white;
+        width: 90%; border: 2px solid #242424;
         padding: 35px 2% 30px; z-index: 1; display: none;
     }
     footer .mapPopup.active{
